@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
@@ -30,7 +30,7 @@ const Typing = () => {
   return (
     <>
       <span
-      className="text-4xl md:text-7xl font-bold dark:text-white text-center"
+        className="text-2xl md:text-4xl lg:text-7xl font-bold dark:text-white text-center"
         style={{ whiteSpace: "pre" }}
         ref={el} // Pass the ref to the element
       />
