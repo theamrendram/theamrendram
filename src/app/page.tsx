@@ -20,7 +20,7 @@ export default function Home() {
       setTimeout(() => {
         setShowCover(false);
       }, 1000); // Adjust if the move animation duration is not 1s
-    }, 7000); // Wait 2 seconds before starting the animation
+    }, 4000); // Wait 2 seconds before starting the animation
 
     // Clear timeout if component unmounts
     return () => clearTimeout(timer);
