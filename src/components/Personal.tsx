@@ -18,8 +18,7 @@ const Personal = () => {
       <div>
         <p className="text-3xl font-semibold">Kumar Amrendram</p>
         <p className="text-lg py-4">
-          The Tech enthusiastic guy with the CHUL to do something greater, Web
-          Development is bae.
+         I am a Fullstack web developer. I have experience in building web applications using React,Next, Node.js, and PostgreSQL. I am passionate about learning new technologies and building products that solve real-world problems.
         </p>
       </div>
       <div className="flex gap-2">
@@ -30,7 +29,7 @@ const Personal = () => {
         </Link>
         <div className="flex gap-2">
           <Link
-            href={"https://github.com/KumarAmrendram"}
+            href={"https://github.com/theamrendram"}
             className="border p-2 border-zinc-400 rounded-lg hover:text-black hover:bg-primary duration-200 ease-in-out hover:scale-110">
             <Github />
           </Link>
