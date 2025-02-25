@@ -22,13 +22,13 @@ export default function PortfolioSection() {
         <h2 className="text-4xl md:text-2xl font-bold flex-shrink-0">PORTFOLIO</h2>
 
         <div className="w-full max-w-xl flex-shrink-0">
-          <Input
+          {/* <Input
             type="search"
             placeholder="Search"
             className="w-full bg-white text-black"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-          />
+          /> */}
         </div>
 
         <div className="overflow-y-auto flex-grow pr-4 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-800 [&::-webkit-scrollbar-thumb]:bg-gray-600 [&::-webkit-scrollbar-thumb]:rounded-full">
