@@ -1,161 +1,233 @@
-"use client"
-import React from 'react'
-import { useParams } from 'next/navigation';
-import Navbar from '@/components/Navbar';
-import CodeBlock from '@/components/code-block';
-
+"use client";
+import React from "react";
+import { useParams } from "next/navigation";
+import Navbar from "@/components/Navbar";
+import CodeBlock from "@/components/code-block";
+import Footer from "@/components/footer";
+import Image from "next/image";
+import propDrillingImage from "@/public/images/prop-drilling.png";
 const SingleBlog = () => {
   const params = useParams();
   const slug = params.slug;
-  console.log(slug, params)
+  console.log("Blog Slug:", slug);
+
   return (
-    <section className='--font-'>
+    <section className="">
       <Navbar />
-      <div className="max-w-4xl mx-auto h-screen">
-        <h1 className='text-2xl text-center font-semibold'>
-          A Guide to State Management in React
+      <div className="max-w-4xl mx-auto px-4">
+        {/* Blog Title */}
+        <h1 className="text-3xl font-bold text-center mt-6">
+          A Beginner&apos;s Guide to State Management in React
         </h1>
 
-        <div className="">
-
-          <h2 className='text-lg font-semibold pt-4'>What is a state in react?</h2>
-          <p className='py-2'>Components often need to change what&apos;s on the screen in response to user interactions. For example, typing into a form should update the input field, and clicking &quot;buy&quot; should add a product to the shopping cart. Components need to remember things like the current input value and the shopping cart contents. In React, this kind of component memory is called state.
-
-            In simple terms, a component&apos;s state is data that can change throughout the component&apos;s lifetime.</p>
-
-          <p className='py-2'>
-            State management is a fundamental concept in React that ensures smooth user interactions and dynamic UI updates. Whether you&apos;re handling form inputs, toggling themes, or managing complex app-wide data, having a structured approach to state management is crucial. This guide will take you through everything you need to know about handling state effectively in React. </p>
-
+        {/* Introduction */}
+        <div className="mt-6">
+          <h2 className="text-xl font-semibold">Introduction</h2>
+          <p className="py-2">
+            If you’re new to React, you might have heard the term{" "}
+            <strong>{"state management"}</strong> but aren&apos;t sure what it
+            means or why it’s important. In simple terms, state refers to the
+            data or information that determines how a component behaves and
+            renders on the screen.
+          </p>
+          <p className="py-2">
+            React components can be dynamic, meaning they update when data
+            changes. However, managing that data effectively is key to building
+            smooth and scalable applications. This guide will walk you through
+            the fundamentals of React state, why it matters, common challenges,
+            and different ways to manage it efficiently.
+          </p>
         </div>
 
-        <div className="">
-
-          <h2 className='text-lg font-semibold pt-4'>Why state management is important?</h2>
-          <p>
-            State management is crucial for preserving current states, handling state changes when new events occur, and passing states between parent and child components. While this isn&apos;t particularly challenging for small-scale applications, it can become complex in larger applications.
+        {/* What is State? */}
+        <div className="mt-6">
+          <h2 className="text-xl font-semibold">What is State in React?</h2>
+          <p className="py-2">
+            In React, <strong>state</strong> is like a component’s memory. It
+            stores values that can change over time. Unlike regular JavaScript
+            variables, when state updates, React re-renders the component to
+            reflect those changes.
+          </p>
+          <p className="py-2">
+            Let’s take an example of a counter app. When you click a button to
+            increase the count, the number displayed updates. That’s because the
+            component’s state changes and triggers a re-render.
           </p>
 
-          <ol className='list-decimal list-inside py-2'>
-            <li> <span className='font-semibold'>Scalability and Organization: </span>State management streamlines data handling and makes applications easier to maintain while improving overall organization and scalability.</li>
-            <li> <span className='font-semibold'>Performance: </span>Efficient state management enhances performance by reducing unnecessary re-renders.</li>
-            <li><span className='font-semibold'>Data Sharing: </span>It enables smooth data sharing between components while preventing inconsistencies and discrepancies. </li>
-            <li>
-              <span className='font-semibold'>Predictable and Consistent State Updates:</span> Libraries like Redux provide strict rules for state updates, ensuring predictable and consistent state changes.
-            </li>
-          </ol>
-        </div>
-
-        <div className="py-6">
-          <h2 className='text-lg font-semibold'>State management challenges</h2>
-
-          <p className='py-2'>
-            as rightly said by uncle ben “with great powers comes great responsibilities”. here a few issues faced by state management
-          </p>
-
-          <ol className='list-decimal list-inside py-2'>
-            <li> <span className='font-semibold'>Prop Drilling:</span> When in react the state passed down to multiple layers of nested components. This makes the code difficult to maintain, scale and understand when components grows significantly.</li>
-            <li> <span className='font-semibold'>Performance Issues:</span> Inefficient state management often leads to performance bottle neck, unnecessary re-renders and a sluggish user experience. as the application grows state management becomes more complex.
-            </li>
-          </ol>
-        </div>
-
-        <div className="py-6">
-          <h2 className='text-lg font-semibold'>Different approaches to manage state in react</h2>
-
-          <span className='font-semibold'>1. Local State:</span> By local state we mean state associated at a individual component level, useState and useReducer hooks are used to manage the state at this level.
-          <div className='my-2'>
-
-            <CodeBlock code={`// use state 
-import { useState } from "react";
-
-const Form = () => {
-  const [formData, setFormData] = useState({ name: "", email: "" });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  return (
-    <form>
-      <input name="name" value={formData.name} onChange={handleChange} />
-      <input name="email" value={formData.email} onChange={handleChange} />
-    </form>
-  );
-};`} language='javascript' />
-
-            <CodeBlock code={`// use reducer 
-import { useReducer } from "react";
-
-const reducer = (state, action) => {
-  switch (action.type) {
-    case "increment":
-      return { count: state.count + 1 };
-    case "decrement":
-      return { count: state.count - 1 };
-    default:
-      return state;
-  }
-};
+          {/* Code Example: useState */}
+          <CodeBlock
+            code={`import { useState } from "react";
 
 const Counter = () => {
-  const [state, dispatch] = useReducer(reducer, { count: 0 });
+  const [count, setCount] = useState(0); // State initialized with 0
 
   return (
     <div>
-      <p>Count: {state.count}</p>
-      <button onClick={() => dispatch({ type: "increment" })}>+</button>
-      <button onClick={() => dispatch({ type: "decrement" })}>-</button>
+      <p>Current Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increase</button>
     </div>
   );
-};`} language='javascript' />
+};`}
+            language="javascript"
+          />
+        </div>
 
+        {/* Why is State Management Important? */}
+        <div className="mt-6">
+          <h2 className="text-xl font-semibold">
+            Why is State Management Important?
+          </h2>
+          <p className="py-2">
+            State management ensures that your application updates correctly and
+            efficiently when data changes. Without it, handling user
+            interactions or dynamic content would be messy and unorganized.
+          </p>
+          <p className="py-2">Here’s why state management matters:</p>
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              <strong>Consistency:</strong> Keeps the UI and data in sync.
+            </li>
+            <li>
+              <strong>Scalability:</strong> Makes large applications easier to
+              manage.
+            </li>
+            <li>
+              <strong>Performance:</strong> Prevents unnecessary re-renders,
+              keeping the app fast.
+            </li>
+            <li>
+              <strong>Predictability:</strong> Helps in debugging by making
+              state changes trackable.
+            </li>
+          </ul>
+        </div>
 
-            <div className="py-4">
-              <p className='py-2 font-semibold text-lg'>2. Global State Management</p>
-              <p>For managing state across multiple components, React provides built-in and third-party solutions:</p>
+        {/* Challenges in State Management */}
+        <div className="mt-6">
+          <h2 className="text-xl font-semibold">
+            Challenges in State Management
+          </h2>
+          <p className="py-2">
+            Managing state in small apps is easy, but as your application grows,
+            you might face challenges such as:
+          </p>
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              <strong>Prop Drilling:</strong> Passing state through multiple
+              levels of components makes the code harder to manage.
+              <div className="mx-auto flex items-center justify-center p-4">
+                <Image
+                  src={propDrillingImage}
+                  alt="Prop Drilling"
+                  height={150}
+                  width={600}
+                />
+              </div>
+            </li>
+            <li>
+              <strong>Performance Issues:</strong> Unnecessary updates can slow
+              down the app.
+            </li>
+            <li>
+              <strong>Complexity:</strong> Managing global state across multiple
+              components becomes tricky.
+            </li>
+          </ul>
+        </div>
 
-              <div className="p-6">
-                <p> <span className='py-2 font-semibold '>1. Context API (built in React Solution): </span>
-                  The Context API allows you to share state across components without prop drilling. It provides a way to pass data through the component tree without having to pass props down manually at every level.</p>
-                <CodeBlock code={`import { createContext, useContext, useState } from "react";
+        {/* Different Approaches to State Management */}
+        <div className="mt-6">
+          <h2 className="text-xl font-semibold">
+            Different Ways to Manage State in React
+          </h2>
+          <p className="py-2">
+            Depending on the size of your application, React offers different
+            state management techniques:
+          </p>
 
-const UserContext = createContext();
+          {/* 1. Local State */}
+          <h3 className="font-semibold mt-4">
+            1. Local State (useState, useReducer)
+          </h3>
+          <p className="py-2">
+            Local state is confined to a single component and managed using{" "}
+            <code>useState</code> or <code>useReducer</code>.
+          </p>
 
-const UserProvider = ({ children }) => {
-  const [user, setUser] = useState({ name: "John Doe", age: 25 });
+          <CodeBlock
+            code={`import { useState } from "react";
+
+const Toggle = () => {
+  const [isOn, setIsOn] = useState(false);
+
   return (
-    <UserContext.Provider value={{ user, setUser }}>
+    <div>
+      <p>{isOn ? "ON" : "OFF"}</p>
+      <button onClick={() => setIsOn(!isOn)}>Toggle</button>
+    </div>
+  );
+};`}
+            language="javascript"
+          />
+
+          {/* 2. Global State */}
+          <h3 className="font-semibold mt-4">
+            2. Global State (Context API, Redux)
+          </h3>
+          <p className="py-2">
+            When multiple components need to share the same state, you can use
+            the Context API or Redux.
+          </p>
+
+          {/* Context API Example */}
+          <h4 className="font-semibold mt-2">Using Context API</h4>
+          <CodeBlock
+            code={`import { createContext, useContext, useState } from "react";
+
+const ThemeContext = createContext();
+
+const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState("light");
+
+  return (
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       {children}
-    </UserContext.Provider>
+    </ThemeContext.Provider>
   );
 };
 
-const Profile = () => {
-  const { user } = useContext(UserContext);
-  return <h2>User: {user.name}</h2>;
+const ChildComponent = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
+
+  return (
+    <div>
+      <p>Current Theme: {theme}</p>
+      <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+        Toggle Theme
+      </button>
+    </div>
+  );
 };
 
 const App = () => (
-  <UserProvider>
-    <Profile />
-  </UserProvider>
-);`} language='javascript' />
-              </div>
+  <ThemeProvider>
+    <ChildComponent />
+  </ThemeProvider>
+);`}
+            language="javascript"
+          />
 
-              <div className="p-6">
-                <p className='py-2 font-semibold'>2. Redux (Popular third-party state management library): </p>
-                Redux provides a centralized store and follows a strict unidirectional data flow, ensuring predictable state updates.                <CodeBlock code={`import { createStore } from "redux";
+          {/* Redux Example */}
+          <h4 className="font-semibold mt-2">Using Redux</h4>
+          <CodeBlock
+            code={`import { createStore } from "redux";
 import { Provider, useDispatch, useSelector } from "react-redux";
 
-const initialState = { count: 0 };
-const reducer = (state = initialState, action) => {
+const reducer = (state = { count: 0 }, action) => {
   switch (action.type) {
-    case "INCREMENT":
-      return { count: state.count + 1 };
-    case "DECREMENT":
-      return { count: state.count - 1 };
-    default:
-      return state;
+    case "INCREMENT": return { count: state.count + 1 };
+    case "DECREMENT": return { count: state.count - 1 };
+    default: return state;
   }
 };
 
@@ -178,54 +250,24 @@ const App = () => (
   <Provider store={store}>
     <Counter />
   </Provider>
-);`} language='javascript' />
-              </div>
-
-              <div className="">
-                <p className='py-2 font-semibold'>When Should You Use Global State?</p>
-
-                <div>
-                  <p>                  While local state is sufficient for most cases, global state becomes necessary when:
-                  </p>
-                  <ul className='list-disc py-2 px-4'>
-                    <li>
-                      Multiple components need access to the same state (e.g., authentication status, theme settings).
-                    </li>
-                    <li>
-                      Prop drilling becomes unmanageable.
-                    </li>
-                    <li>
-                      State logic is complex and needs to be reusable across different parts of the app.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-
+);`}
+            language="javascript"
+          />
         </div>
 
-
-        <div className="py-6">
-          <h2 className='text-lg font-semibold'>Conclusion</h2>
+        {/* Conclusion */}
+        <div className="mt-6">
+          <h2 className="text-xl font-semibold">Conclusion</h2>
           <p>
-            State management in React is an essential concept that ensures smooth user interactions, consistent UI updates, and maintainable applications. While local state (useState, useReducer) is sufficient for small applications, and larger applications benefit from global state management solutions like the Context API or Redux. </p>
-
-          <p>Understanding when to use each approach depends on the scale and complexity of your application. You can build efficient, scalable, and high-performing React applications by mastering state management!
+            Mastering state management is crucial for building dynamic and
+            scalable React applications. Start with <code>useState</code> for
+            simple cases and explore Context API or Redux for larger apps.
           </p>
         </div>
       </div>
+      <Footer />
     </section>
-  )
-}
+  );
+};
 
-const page = () => {
-
-  return (
-    <SingleBlog />
-  )
-}
-
-export default page
+export default SingleBlog;
