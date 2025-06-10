@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import CodeBlock from "@/components/code-block";
 import Footer from "@/components/footer";
 import Image from "next/image";
-import propDrillingImage from "@/public/images/prop-drilling.png";
+import propDrillingImage from "@/public/images-port/prop-drilling.png";
 const SingleBlog = () => {
   const params = useParams();
   const slug = params.slug;

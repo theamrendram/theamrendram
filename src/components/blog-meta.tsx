@@ -1,12 +1,13 @@
 import React from "react";
 import { BookOpenIcon } from "lucide-react";
-import thumbnail from "@/public/blog/understanding-promises-in-javascript.png";
+import { StaticImageData } from "next/image";
 
 interface BlogMetaProps {
   author: string;
   date: string;
   readingTime: string;
   tags: string[];
+  thumbnail: StaticImageData
 }
 
 const BlogMeta: React.FC<BlogMetaProps> = ({
@@ -14,6 +15,7 @@ const BlogMeta: React.FC<BlogMetaProps> = ({
   date,
   readingTime,
   tags,
+  thumbnail
 }) => {
   return (
     <div className="flex flex-col items-center font-bold gap-4 p-4 rounded-lg">

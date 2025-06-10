@@ -4,6 +4,8 @@ import CodeBlock from "@/components/code-block";
 import { Dock } from "@/components/dock";
 import Footer from "@/components/footer";
 import Terminology from "@/components/terminologies";
+import thumbnail from "@/public/blog/understanding-promises-in-javascript.png";
+
 import React from "react";
 
 const Page = () => {
@@ -39,6 +41,7 @@ const Page = () => {
             date="April 26, 2025"
             readingTime="15 min read"
             tags={["JavaScript", "Promises"]}
+            thumbnail={thumbnail}
           />
           {/* Introduction */}
           <div className="py-4">
