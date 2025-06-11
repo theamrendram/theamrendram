@@ -62,9 +62,9 @@ function Page() {
             </p>
           </div>
 
-          {/* Use state hook */}
+          {/* useState hook */}
           <div className="">
-            <h3 className="text-lg font-semibold py-2">1. useState</h3>
+            <h3 className="text-xl font-semibold py-2">1. useState Hook</h3>
             <p>
               <code>useState()</code> hook is the most used hook in any react
               application. It&apos;s primary purpose is to hold value and
@@ -172,7 +172,7 @@ export default UseStateExample;
                 <Terminology
                   title={"Note:"}
                   description={
-                    <ul className="list-disc list-inside space-y-2 text-justify">
+                    <ul className="list-decimal list-inside space-y-2 text-justify marker:font-bold">
                       <li>
                         React avoids re-rendering a component if the new state
                         value is the same as the current one. For example, if{" "}
@@ -184,6 +184,12 @@ export default UseStateExample;
                         <code>useState</code> (and other hooks) can only be used
                         inside functional components — not in class components
                         or regular functions.
+                      </li>
+                      <li>
+                        State updates in React are <strong>asynchronous</strong>
+                        , meaning they don&apos;t happen immediately. React
+                        batches multiple state updates together to optimize
+                        performance and reduce unnecessary re-renders.
                       </li>
                       <li>
                         The <code>useState</code> hook can store any type of
@@ -203,6 +209,174 @@ export default UseStateExample;
                   }
                 />
               </div>
+            </div>
+          </div>
+
+          {/* useEffect hook */}
+          <div>
+            <h3 className="text-xl font-semibold py-2">1. useEffect Hook</h3>
+
+            <p>
+              The <code>useEffect()</code> hook is one of the most widely used
+              hooks in React. It enables you to perform **side effects** in your
+              components—things that interact with the outside world or happen
+              outside the regular rendering logic.
+              <Terminology
+                title="Side Effects"
+                description={
+                  <div>
+                    <p>
+                      Side effects refer to operations like API calls, DOM
+                      manipulations, event listeners, subscriptions, or timers —
+                      actions that occur independently from rendering the UI.
+                    </p>
+                  </div>
+                }
+              />
+            </p>
+
+            {/* Syntax Section */}
+            <div className="mt-4">
+              <p className="text-md font-semibold py-2 text-gray-800 dark:text-gray-100">
+                Syntax
+              </p>
+
+              <pre className="bg-gray-100 dark:bg-gray-800 p-2 font-medium font-mono text-gray-800 dark:text-white rounded overflow-x-auto">
+                <code>
+                  <span className="text-green-700 dark:text-green-400">
+                    useEffect({"() => {"} ... {"}"}, [dependencies])
+                  </span>
+                </code>
+              </pre>
+
+              {/* Explanation of syntax parts */}
+              <div className="mt-2 text-md text-gray-800 dark:text-gray-200">
+                <p>
+                  <strong className="text-gray-900 dark:text-gray-100">
+                    Callback Function <code>{"() => {}"}</code>:
+                  </strong>{" "}
+                  The function that will be executed when the component renders
+                  or the dependencies change.
+                </p>
+
+                <p className="mt-2">
+                  <strong className="text-gray-900 dark:text-gray-100">
+                    Dependency Array <code>[]</code>:
+                  </strong>{" "}
+                  This determines **when** the effect should run:
+                </p>
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  <li>
+                    <strong>If no dependency array is provided:</strong> the
+                    effect will run **after every render**.
+                  </li>
+                  <li>
+                    <strong>
+                      If an empty array <code>[]</code> is provided:
+                    </strong>{" "}
+                    the effect will run **only once**, after the initial render
+                    — just like <code>componentDidMount</code> in class
+                    components.
+                  </li>
+                  <li>
+                    <strong>If specific values are passed in the array:</strong>{" "}
+                    the effect will re-run **only when those values change**.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Usage Examples */}
+            <div className="mt-4">
+              <p className="text-md font-semibold py-2 text-gray-800 dark:text-gray-100">
+                Common Use Cases
+              </p>
+              <ul className="list-disc list-inside space-y-1 text-gray-800 dark:text-gray-200">
+                <li>Fetching data from an API or database</li>
+                <li>Subscribing/unsubscribing to a service or event</li>
+                <li>Manually updating the DOM</li>
+                <li>Setting up or clearing timers/intervals</li>
+              </ul>
+            </div>
+
+            {/* Real Example Code */}
+            <div className="mt-4">
+              <CodeBlock
+                code={`import { useEffect, useState } from "react";
+
+const UseEffectExample = () => {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    async function fetchUser() {
+      const response = await fetch(
+        "https://api.github.com/users/theamrendram"
+      );
+      const data = await response.json();
+      setUser(data);
+    }
+
+    fetchUser();
+  }, []);
+
+  return (
+    <div>
+      {user && (
+        <>
+          <p>Name: {user.name}</p>
+          <p>Username: {user.login}</p>
+          <p>Bio: {user.bio}</p>
+        </>
+      )}
+    </div>
+  );
+};
+
+export default UseEffectExample;
+`}
+              />
+            </div>
+
+            {/* Explanation of above code */}
+            <div className="mt-2 text-gray-800 dark:text-gray-200">
+              <p>
+                In the above example, <code>useEffect</code> is used to fetch
+                user data from the GitHub API when the component mounts.
+              </p>
+              <p>
+                Initially, the <code>user</code> state is <code>null</code>.
+                Once the data is fetched, the state is updated, and the UI
+                re-renders with the fetched user details.
+              </p>
+            </div>
+
+            {/* Cleanup Note */}
+            <div className="mt-4">
+              <Terminology
+                title="Note: "
+                description={
+                  <div>
+                    <p>
+                      <code>useEffect</code> also supports a <b>cleanup function</b>, which is executed when the
+                      component unmounts or before the effect re-runs. This is
+                      useful for cleanup tasks like clearing intervals,
+                      cancelling requests, or unsubscribing from events.
+                    </p>
+                    <CodeBlock
+                      code={`useEffect(() => {
+  const interval = setInterval(() => {
+    console.log("Interval running");
+  }, 1000);
+
+  return () => {
+    clearInterval(interval);
+    console.log("Interval cleared on unmount");
+  };
+}, []);`}
+                    />
+                  </div>
+                }
+              />
             </div>
           </div>
         </div>
