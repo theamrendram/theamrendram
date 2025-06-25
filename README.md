@@ -1,29 +1,174 @@
-<h1 align="center">Hi 👋, I'm Kumar Amrendram</h1>
-<h3 align="center">A full stack developer </h3>
+# 🚀 Kumar Amrendram - Full Stack Developer
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=theamrendram&label=Profile%20views&color=0e75b6&style=flat" alt="theamrendram" /> </p>
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=28&pause=1000&color=6366F1&center=true&vCenter=true&width=435&lines=Hi+%F0%9F%91%8B%2C+I'm+Kumar+Amrendram;Full+Stack+Developer;Building+the+future+%F0%9F%8C%9F" alt="Typing SVG" />
+</div>
 
-<p align="left"> <a href="https://twitter.com/theamrendram" target="blank"><img src="https://img.shields.io/twitter/follow/theamrendram?logo=twitter&style=for-the-badge" alt="theamrendram" /></a> </p>
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=theamrendram&style=flat-square&color=6366F1" alt="Profile Views" />
+  <a href="https://twitter.com/theamrendram">
+    <img src="https://img.shields.io/twitter/follow/theamrendram?logo=twitter&style=flat-square&color=1DA1F2" alt="Twitter Follow" />
+  </a>
+</div>
 
-- 🔭 I’m currently working on **.NET**
+---
 
-- 🌱 I’m currently learning **AWS**
+## 🚀 About Me
 
-- 💬 Ask me about **react, nodejs**
+I'm a passionate **Full Stack Developer** who loves turning ideas into reality through code. Currently learning **AWS** to build scalable cloud solutions and exploring new technologies. When I'm not coding, you'll find me sharing knowledge with the developer community.
 
-- 📫 How to reach me **amrendramkumar@gmail.com**
+> _"I am Batman."_ 🦇 - Because every developer needs a superhero alter ego!
 
-- ⚡ Fun fact **I am Batman.**
+---
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/theamrendram" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="theamrendram" height="30" width="40" /></a>
-<a href="https://instagram.com/amrendram_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="amrendram_" height="30" width="40" /></a>
-</p>
+## 🛠️ Current Tech Stack
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.electronjs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg" alt="electron" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://graphql.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" alt="graphql" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://mariadb.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
+### Frontend
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=theamrendram&show_icons=true&locale=en&layout=compact" alt="theamrendram" /></p>
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=theamrendram&show_icons=true&locale=en" alt="theamrendram" /></p>
+### Backend
+
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)
+
+### Database
+
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Cloud & DevOps
+
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+---
+
+## 🎯 Featured Projects
+
+### 📊 [Syncsales](https://syncsales.tech) - Lead Management Dashboard
+
+CRM dashboard for managing sales leads and customer data with advanced analytics.
+
+[![Syncsales](https://img.shields.io/badge/View_Live-4ECDC4?style=for-the-badge&logo=vercel&logoColor=white)](https://syncsales.tech)
+
+### 🎪 [IEEE Congress Website](https://dssywlc.bvicam.in) - Event Management
+
+Official website for IEEE Congress 2024 with event management and registration system.
+
+[![IEEE Congress](https://img.shields.io/badge/View_Live-FF6B35?style=for-the-badge&logo=ieee&logoColor=white)](https://dssywlc.bvicam.in)
+
+### 📚 TeachMe - Online Learning Platform
+
+A platform connecting teachers and students for interactive learning experiences.
+
+---
+
+## ♟️ Interactive Chess Game
+
+<div align="center">
+  <h3>🎮 Play Chess with Me!</h3>
+  <p><em>Challenge accepted? Let's play a game of chess! 🏆</em></p>
+</div>
+
+```
+    a   b   c   d   e   f   g   h
+  ┌───┬───┬───┬───┬───┬───┬───┬───┐
+8 │ ♜ │ ♞ │ ♝ │ ♛ │ ♚ │ ♝ │ ♞ │ ♜ │ 8
+  ├───┼───┼───┼───┼───┼───┼───┼───┤
+7 │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ 7
+  ├───┼───┼───┼───┼───┼───┼───┼───┤
+6 │   │   │   │   │   │   │   │   │ 6
+  ├───┼───┼───┼───┼───┼───┼───┼───┤
+5 │   │   │   │   │   │   │   │   │ 5
+  ├───┼───┼───┼───┼───┼───┼───┼───┤
+4 │   │   │   │   │   │   │   │   │ 4
+  ├───┼───┼───┼───┼───┼───┼───┼───┤
+3 │   │   │   │   │   │   │   │   │ 3
+  ├───┼───┼───┼───┼───┼───┼───┼───┤
+2 │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ 2
+  ├───┼───┼───┼───┼───┼───┼───┼───┤
+1 │ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ │ 1
+  └───┴───┴───┴───┴───┴───┴───┴───┘
+    a   b   c   d   e   f   g   h
+```
+
+<div align="center">
+  <h4>🎯 How to Play:</h4>
+  <p><strong>White pieces:</strong> ♔♕♖♗♘♙ (bottom)</p>
+  <p><strong>Black pieces:</strong> ♚♛♜♝♞♟ (top)</p>
+  <p><em>Use standard chess notation: e2e4, Nf3, O-O, etc.</em></p>
+  
+  <h4>🏆 Current Game Status:</h4>
+  <p><strong>White to move</strong> | <strong>Game in progress</strong></p>
+  
+  <details>
+    <summary>🎮 Make a Move</summary>
+    <p><em>Click to reveal move options or challenge me to a game!</em></p>
+    <p><strong>Popular openings:</strong> e4, d4, Nf3, c4</p>
+  </details>
+</div>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Chess_Game-Active-green?style=for-the-badge&logo=chess" alt="Chess Game Active" />
+  <img src="https://img.shields.io/badge/Challenge_Accepted-Let's_Play!-blue?style=for-the-badge&logo=chess" alt="Challenge Accepted" />
+</div>
+
+---
+
+## 📊 GitHub Analytics
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=theamrendram&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=6366F1&text_color=FFFFFF" alt="GitHub Stats" />
+  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=theamrendram&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=6366F1&text_color=FFFFFF" alt="Top Languages" />
+</div>
+
+### 📈 Contribution Activity Graph
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=theamrendram&theme=react-dark&hide_border=true&area=true&color=6366F1&line=6366F1&point=FFFFFF" alt="Contribution Graph" />
+</div>
+
+
+### 📊 GitHub Streak Stats
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=theamrendram&theme=radical&hide_border=true&background=0D1117&stroke=6366F1&ring=6366F1&fire=6366F1&currStreakNum=FFFFFF&currStreakLabel=6366F1&sideNums=FFFFFF&sideLabels=FFFFFF&dates=FFFFFF" alt="GitHub Streak" />
+</div>
+
+### 🏆 GitHub Trophies
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=theamrendram&theme=radical&no-frame=true&no-bg=false&margin-w=4&row=1&column=7" alt="GitHub Trophies" />
+</div>
+
+---
+
+## 🎯 What I'm Working On
+
+- 🔥 **Learning AWS** - Building cloud-native applications
+- 🚀 **Open Source** - Contributing to the developer community
+- 📚 **Blog Writing** - Sharing knowledge and experiences
+- 🎨 **UI/UX Design** - Creating beautiful user experiences
+
+---
+
+## 🎨 Random Dev Quote
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
+</div>
+
+---
+
+<div align="center">
+  <sub>Made with ❤️ by Kumar Amrendram</sub>
+  <br>
+  <sub>⚡ Powered by GitHub & Vercel</sub>
+</div>
